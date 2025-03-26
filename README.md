@@ -1,6 +1,7 @@
 # Benchmarking Redis vs NATS (JetStream)
 
-> [!IMPORTANT] Disclaimer: This is just a quick benchmark and should not be taken as the definitive truth. Numerous factors such as network latency, system hardware, configuration settings, and environmental conditions can significantly affect the results. This benchmark is simplified for the sake of a basic comparison between Redis and NATS in a Pub/Sub use case. While Redis is not primarily designed for Pub/Sub at scale, this test is intended as a basic performance indicator under stress conditions. For real-world use cases, further tuning and testing are necessary.
+> [!IMPORTANT]
+> Disclaimer: This is just a quick benchmark and should not be taken as the definitive truth. Numerous factors such as network latency, system hardware, configuration settings, and environmental conditions can significantly affect the results. This benchmark is simplified for the sake of a basic comparison between Redis and NATS in a Pub/Sub use case. While Redis is not primarily designed for Pub/Sub at scale, this test is intended as a basic performance indicator under stress conditions. For real-world use cases, further tuning and testing are necessary.
 
 ## Table of Contents
 - [Overview](#overview)
