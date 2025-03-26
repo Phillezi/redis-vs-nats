@@ -1,0 +1,6 @@
+*.docker-compose.yml
+LICENSE
+.gitignore
+.git
+README
+bin

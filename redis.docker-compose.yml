@@ -1,0 +1,15 @@
+services:
+
+  redis:
+    image: redis:latest
+    container_name: redis_benchmark
+    ports:
+      - "6379:6379"
+
+  benchmark:
+    build: .
+    container_name: benchmark_runner
+    depends_on:
+      - redis
+
+    command: ["redis", "--redis-host", "redis:6379"]

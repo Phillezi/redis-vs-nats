@@ -1,0 +1,15 @@
+services:
+  nats:
+    image: nats:latest
+    container_name: nats_benchmark
+    ports:
+      - "4222:4222"
+    command: ["-js"]
+
+  benchmark:
+    build: .
+    container_name: benchmark_runner
+    depends_on:
+      - nats
+
+    command: ["nats", "--nats-host", "nats:4222"]
