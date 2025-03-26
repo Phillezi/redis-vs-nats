@@ -1,0 +1,7 @@
+services:
+
+  benchmark:
+    build: .
+    container_name: benchmark_runner
+
+    command: ["mono"]

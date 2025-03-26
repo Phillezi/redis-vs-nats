@@ -39,8 +39,8 @@ compose/bench/%:
 	@docker compose --file $*.docker-compose.yml up --force-recreate --build --abort-on-container-exit 2>&1 | grep --line-buffered "benchmark_runner"
 	@docker compose --file $*.docker-compose.yml down --remove-orphans
 
-compose/bench: compose/bench/redis compose/bench/nats
-	@echo "Benchmarking completed for Redis & NATS.
+compose/bench: compose/bench/redis compose/bench/nats compose/bench/mono
+	@echo "Benchmarking completed for Redis, NATS and a monolithic channel based impl.
 
 clean:
 	@echo "Cleaning up..."
